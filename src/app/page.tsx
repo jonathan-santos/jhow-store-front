@@ -10,7 +10,7 @@ const Home = () => (
     </header>
 
     <main>
-      <ul className="banner">
+      <ul>
         {home.banners.map(item => (
           <li key={item.id}>
             <Link href="/product/1">
