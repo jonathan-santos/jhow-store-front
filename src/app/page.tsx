@@ -1,35 +1,30 @@
-export default function Home() {
-  return (
-    <>
-      <header>
-        Jhow Store
-      </header>
+import Link from 'next/link'
+import Image from 'next/image'
 
-      <main>
-        <ul>
-          <li>
-            <a href="/product/1">
-              Product 1
-            </a>
+import home from '../data/home.json'
+
+const Home = () => (
+  <>
+    <header>
+      Jhow Store
+    </header>
+
+    <main>
+      <ul className="banner">
+        {home.banners.map(item => (
+          <li key={item.id}>
+            <Link href="/product/1">
+              <Image src={item.src} alt={item.alt} width={1080} height={480} />
+            </Link>
           </li>
+        ))}
+      </ul>
+    </main>
 
-          <li>
-            <a href="/product/2">
-              Product 2
-            </a>
-          </li>
+    <footer>
+      Created by Jhow
+    </footer>
+  </>
+);
 
-          <li>
-            <a href="/product/3">
-              Product 3
-            </a>
-          </li>
-        </ul>
-      </main>
-
-      <footer>
-        Created by Jhow
-      </footer>
-    </>
-  );
-}
+export default Home;
