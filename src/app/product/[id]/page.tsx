@@ -20,6 +20,12 @@ const Product = async ({ params }) => {
       <h1>{product.alt}</h1>
 
       <Image src={product.src} alt={product.alt} width={1080} height={480} />
+
+      <div>
+        <input type="number" value="1" />
+      </div>
+
+      <button>Buy</button>
     </>
   )
 }
