@@ -1,9 +1,14 @@
+'use client'
+
+import { useState } from 'react'
 import Image from 'next/image'
 
 import data from '../../../data/home.json'
 
-const Product = async ({ params }) => {
-  const { id: productId } = await params
+const Product = ({ params }) => {
+  const { id: productId } = params
+
+  const [quantity, setQuantity] = useState(0)
 
   const product = data.banners.find(p => p.id === Number(productId))
 
@@ -22,7 +27,12 @@ const Product = async ({ params }) => {
       <Image src={product.src} alt={product.alt} width={1080} height={480} />
 
       <div>
-        <input type="number" value="1" />
+        <button onClick={() => setQuantity(quantity - 1)}>-</button>
+      
+        <input id='quantity' type="number" value={quantity} />
+
+        <button onClick={() => setQuantity(quantity + 1)}>+</button>
+
       </div>
 
       <button>Buy</button>
