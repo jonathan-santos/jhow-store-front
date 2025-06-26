@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const cart = [
   { id: 0, quantity: 2, price: 5.0 },
 ]
@@ -27,6 +29,10 @@ const Cart = () => (
     <div>
       Total: $ {getCartTotal()}
     </div>
+
+    <Link href="/me">
+      Buy all
+    </Link>
   </>
 )
 
