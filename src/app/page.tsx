@@ -7,6 +7,12 @@ const Home = () => (
   <>
     <header>
       Jhow Store
+
+      <ul>
+        <li>
+          <Link href="/me">My purchases</Link>
+        </li>
+      </ul>
     </header>
 
     <main>
