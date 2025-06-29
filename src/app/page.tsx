@@ -26,10 +26,6 @@ const Home = () => (
         ))}
       </ul>
     </main>
-
-    <footer>
-      Created by Jhow
-    </footer>
   </>
 );
 

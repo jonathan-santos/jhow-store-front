@@ -26,6 +26,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
+
+        
+        <footer>
+          Created by Jhow
+        </footer>
       </body>
     </html>
   );
