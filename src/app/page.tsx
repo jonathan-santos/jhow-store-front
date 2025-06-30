@@ -5,16 +5,6 @@ import home from '../data/home.json'
 
 const Home = () => (
   <>
-    <header>
-      Jhow Store
-
-      <ul>
-        <li>
-          <Link href="/me">My purchases</Link>
-        </li>
-      </ul>
-    </header>
-
     <main>
       <ul>
         {home.banners.map(item => (
