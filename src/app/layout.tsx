@@ -36,7 +36,9 @@ export default function RootLayout({
           </ul>
         </header>
             
-        {children}
+        <main>
+          {children}
+        </main>
         
         <footer>
           Created by Jhow
