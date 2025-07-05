@@ -1,10 +1,14 @@
 import Link from 'next/link'
 
-const Header = () => (
-  <header>
-    Jhow Store
+import styles from './header.module.css'
 
-    <ul>
+const Header = () => (
+  <header className={styles.header}>
+    <div className={styles.title}>
+      Jhow Store
+    </div>
+
+    <ul className={styles.list}>
       <li>
         <Link href="/me">My purchases</Link>
       </li>
