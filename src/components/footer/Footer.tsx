@@ -1,5 +1,7 @@
+import styles from './footer.module.css'
+
 const Footer = () => (
-  <footer>
+  <footer className={styles.footer}>
     Created by Jhow
   </footer>
 )
