@@ -4,7 +4,11 @@
       "id": 1,
       "src": "/banners/banner.webp",
       "alt": "something"
+    },
+    {
+      "id": 2,
+      "src": "/banners/banner.webp",
+      "alt": "something else"
     }
-    
   ]
 }
