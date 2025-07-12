@@ -1,12 +1,33 @@
 .container {
-  background-color: red;
   list-style: none;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
 }
 
-.item {
-  background-color: blue;
+@media (min-width: 720px) {
+  .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
+
+.item  {
+  margin-bottom: 1rem;
+}
+
+.item * {
+  max-width: 85%;
+}
+
+@media (min-width: 720px) {
+  .item {
+    flex-basis: calc(100% / 3);
+  }
+}
+
 
 .item + .item {
-  margin-top: 1rem;
+  /* margin-left: 1rem; */
 }

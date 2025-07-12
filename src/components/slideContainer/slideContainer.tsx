@@ -1,9 +1,12 @@
 import styles from './slideContainer.module.css'
 
-const SlideContainer = (props) => (
-  // <>{String(Array.isArray(props.children))}</>
+const SlideContainer = ({
+  children,
+}: Readonly<{
+  children: React.ReactNode[];
+}>) => (
   <ul className={styles.container}>
-    {props.children.map(((child, i) => (
+    {children.map(((child, i) => (
       <li key={i} className={styles.item}>
         {child}
       </li>

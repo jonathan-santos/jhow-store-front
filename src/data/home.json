@@ -9,6 +9,16 @@
       "id": 2,
       "src": "/banners/banner.webp",
       "alt": "something else"
+    },
+    {
+      "id": 3,
+      "src": "/banners/banner.webp",
+      "alt": "something else entirely"
+    },
+    {
+      "id": 4,
+      "src": "/banners/banner.webp",
+      "alt": "something else entirely again"
     }
   ]
 }
