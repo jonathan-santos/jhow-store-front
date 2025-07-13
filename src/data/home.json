@@ -4,21 +4,23 @@
       "id": 1,
       "src": "/banners/banner.webp",
       "alt": "something"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "img": "https://picsum.photos/200",
+      "description": "Product"
     },
     {
       "id": 2,
-      "src": "/banners/banner.webp",
-      "alt": "something else"
+      "img": "https://picsum.photos/200",
+      "description": "Product"
     },
     {
       "id": 3,
-      "src": "/banners/banner.webp",
-      "alt": "something else entirely"
-    },
-    {
-      "id": 4,
-      "src": "/banners/banner.webp",
-      "alt": "something else entirely again"
+      "img": "https://picsum.photos/200",
+      "description": "Product"
     }
   ]
 }
