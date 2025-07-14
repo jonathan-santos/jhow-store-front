@@ -9,18 +9,21 @@
   "products": [
     {
       "id": 1,
-      "img": "https://picsum.photos/200",
-      "description": "Product"
+      "name": "Product",
+      "image": "https://picsum.photos/200",
+      "description": "Something, something, something"
     },
     {
       "id": 2,
-      "img": "https://picsum.photos/200",
-      "description": "Product"
+      "name": "Product",
+      "image": "https://picsum.photos/200",
+      "description": "Something, something, something"
     },
     {
       "id": 3,
-      "img": "https://picsum.photos/200",
-      "description": "Product"
+      "name": "Product",
+      "image": "https://picsum.photos/200",
+      "description": "Something, something, something"
     }
   ]
 }

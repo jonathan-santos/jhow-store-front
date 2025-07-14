@@ -4,6 +4,7 @@ import Image from 'next/image'
 import home from '../data/home.json'
 
 import SlideContainer from '@/components/slideContainer/slideContainer'
+import Product from '@/components/product/Product';
 
 const Home = () => (
   <>
@@ -16,7 +17,7 @@ const Home = () => (
     <SlideContainer>
       {home.products.map((item) => (
         <Link key={item.id} href={`/product/${item.id}`}>
-          <Image src="https://picsum.photos/200" alt="something" width={200} height={200} />
+          <Product {...item} />
         </Link>
       ))}
     </SlideContainer>
