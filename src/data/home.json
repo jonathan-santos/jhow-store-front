@@ -5,25 +5,5 @@
       "src": "/banners/banner.webp",
       "alt": "something"
     }
-  ],
-  "products": [
-    {
-      "id": 1,
-      "name": "Product",
-      "image": "https://picsum.photos/200",
-      "description": "Something, something, something"
-    },
-    {
-      "id": 2,
-      "name": "Product",
-      "image": "https://picsum.photos/200",
-      "description": "Something, something, something"
-    },
-    {
-      "id": 3,
-      "name": "Product",
-      "image": "https://picsum.photos/200",
-      "description": "Something, something, something"
-    }
   ]
 }
