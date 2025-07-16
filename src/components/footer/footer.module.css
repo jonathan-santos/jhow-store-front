@@ -1,6 +1,15 @@
 .footer {
   border-top: 0.1rem solid #000;
   text-align: center;
-  min-height: 6.4rem;
+  min-height: 3.6rem;
   padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
