@@ -1,4 +1,4 @@
-import styles from './slideContainer.module.css'
+import styles from './slideContainer.module.scss'
 
 const SlideContainer = ({
   children,

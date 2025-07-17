@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import styles from './product.module.css'
+import styles from './product.module.scss'
 
 interface IProduct {
   id: number;

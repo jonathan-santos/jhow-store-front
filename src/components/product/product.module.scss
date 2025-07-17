@@ -7,12 +7,12 @@
   align-items: center;
   border-radius: 1rem;
   text-align: center;
-}
 
-.product > * + * {
-  margin-top: 1rem;
-}
+  >  * + * {
+    margin-top: 1rem;
+  }
 
-.product img {
-  border-radius: 1rem;
+  img {
+    border-radius: 1rem;
+  }
 }
