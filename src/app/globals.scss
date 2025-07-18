@@ -37,9 +37,18 @@ main {
   max-width: 100%;
 }
 
-main > * + *  {
-  margin-top: 0.8rem;
-}
+section {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    > * + * {
+      margin-top: 0.8rem;
+    }
+  }
 
 a {
   color: inherit;

@@ -22,7 +22,7 @@ const Product = ({ params }: { params: IProductParams}) => {
   }
   
   return (
-    <>
+    <section>
       <h1>{product.alt}</h1>
 
       <Image src={product.src} alt={product.alt} width={1080} height={480} />
@@ -37,7 +37,7 @@ const Product = ({ params }: { params: IProductParams}) => {
       </div>
 
       <Link href="/cart">Buy</Link>
-    </>
+    </section>
   )
 }
 
