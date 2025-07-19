@@ -9,19 +9,23 @@ import Product from '@/components/product/Product';
 
 const Home = () => (
   <>
-    {home.banners.map(item => (
-      <Link key={item.id} href="/product/1">
-        <Image src={item.src} alt={item.alt} width={1080} height={480} />
-      </Link>
-    ))}
-
-    <SlideContainer>
-      {products.slice(0, 9).map((item) => (
-        <Link key={item.id} href={`/product/${item.id}`}>
-          <Product {...item} />
+    <section>
+      {home.banners.map(item => (
+        <Link key={item.id} href="/product/1">
+          <Image src={item.src} alt={item.alt} width={1080} height={480} />
         </Link>
       ))}
-    </SlideContainer>
+    </section>
+
+    <section>
+      <SlideContainer>
+        {products.slice(0, 9).map((item) => (
+          <Link key={item.id} href={`/product/${item.id}`}>
+            <Product {...item} />
+          </Link>
+        ))}
+      </SlideContainer>
+    </section>
   </>
 );
 

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import home from '../../data/home.json'
 
 const Me = () => (
-  <>
+  <section>
     <h1>Me</h1>
 
     <div>
@@ -19,7 +19,7 @@ const Me = () => (
         ))}
       </ul>
     </div>
-  </>
+  </section>
 )
 
 export default Me

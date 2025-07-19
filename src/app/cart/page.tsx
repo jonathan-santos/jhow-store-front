@@ -15,7 +15,7 @@ const getCartTotal = () => {
 }
 
 const Cart = () => (
-  <>
+  <section>
     <h1>Your cart</h1>
 
     <ul className="items">
@@ -33,7 +33,7 @@ const Cart = () => (
     <Link href="/me">
       Buy all
     </Link>
-  </>
+  </section>
 )
 
 export default Cart
