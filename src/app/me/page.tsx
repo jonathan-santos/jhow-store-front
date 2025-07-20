@@ -1,9 +1,11 @@
 import Link from 'next/link'
 
+import Section from '@/components/section/section'
+
 import home from '../../data/home.json'
 
 const Me = () => (
-  <section>
+  <Section>
     <h1>Me</h1>
 
     <div>
@@ -19,7 +21,7 @@ const Me = () => (
         ))}
       </ul>
     </div>
-  </section>
+  </Section>
 )
 
 export default Me

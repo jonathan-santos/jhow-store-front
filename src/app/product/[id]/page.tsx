@@ -2,9 +2,11 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+
+import Section from '@/components/section/section'
 
 import data from '../../../data/home.json'
-import Link from 'next/link'
 
 interface IProductParams {
   id: string
@@ -22,7 +24,7 @@ const Product = ({ params }: { params: IProductParams}) => {
   }
   
   return (
-    <section>
+    <Section>
       <h1>{product.alt}</h1>
 
       <Image src={product.src} alt={product.alt} width={1080} height={480} />
@@ -37,7 +39,7 @@ const Product = ({ params }: { params: IProductParams}) => {
       </div>
 
       <Link href="/cart">Buy</Link>
-    </section>
+    </Section>
   )
 }
 

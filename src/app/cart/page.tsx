@@ -1,4 +1,6 @@
-import Link from 'next/link';
+import Link from 'next/link'
+
+import Section from '@/components/section/section'
 
 const cart = [
   { id: 0, quantity: 2, price: 5.0 },
@@ -15,7 +17,7 @@ const getCartTotal = () => {
 }
 
 const Cart = () => (
-  <section>
+  <Section>
     <h1>Your cart</h1>
 
     <ul className="items">
@@ -33,7 +35,7 @@ const Cart = () => (
     <Link href="/me">
       Buy all
     </Link>
-  </section>
+  </Section>
 )
 
 export default Cart
