@@ -5,5 +5,11 @@
       "src": "/banners/banner.webp",
       "alt": "something"
     }
+  ],
+  "questions": [
+    {
+      "title": "What the hell is this?",
+      "answer": "You know, a website"
+    }
   ]
 }

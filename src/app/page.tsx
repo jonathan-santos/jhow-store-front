@@ -7,6 +7,7 @@ import products from '../data/products.json'
 import Section from '@/components/section/section'
 import SlideContainer from '@/components/slideContainer/slideContainer'
 import Product from '@/components/product/Product';
+import Faq from '@/components/faq/faq';
 
 const Home = () => (
   <>
@@ -27,6 +28,10 @@ const Home = () => (
         ))}
       </SlideContainer>
     </section>
+
+    <Section>
+      <Faq title='FAQ' questions={home.questions} />
+    </Section>
   </>
 );
 
