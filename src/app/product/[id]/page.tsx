@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Section from '@/components/section/section'
+import Button from '@/components/button/button'
 
 import data from '../../../data/home.json'
 
@@ -30,11 +31,11 @@ const Product = ({ params }: { params: IProductParams}) => {
       <Image src={product.src} alt={product.alt} width={1080} height={480} />
 
       <div>
-        <button onClick={() => setQuantity(quantity - 1)}>-</button>
+        <Button onClick={() => setQuantity(quantity - 1)}>-</Button>
       
         <input id='quantity' type="number" value={quantity} />
 
-        <button onClick={() => setQuantity(quantity + 1)}>+</button>
+        <Button onClick={() => setQuantity(quantity + 1)}>+</Button>
 
       </div>
 
