@@ -1,10 +1,12 @@
+import { ReactNode } from 'react'
+
 import styles from './slideContainer.module.scss'
 
-const SlideContainer = ({
-  children,
-}: Readonly<{
-  children: React.ReactNode[];
-}>) => (
+interface ISlideContainer {
+  children: ReactNode[];
+}
+
+const SlideContainer = ({ children }: ISlideContainer) => (
   <ul className={styles.container}>
     {children.map(((child, i) => (
       <li key={i} className={styles.item}>
