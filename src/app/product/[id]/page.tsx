@@ -31,7 +31,7 @@ const Product = ({ params }: { params: IProductParams}) => {
       <Image src={product.src} alt={product.alt} width={1080} height={480} />
 
       <div>
-        <Button onClick={() => setQuantity(quantity - 1)}>-</Button>
+        <Button onClick={() => setQuantity(quantity - 1)} style='danger'>-</Button>
       
         <input id='quantity' type="number" value={quantity} />
 
