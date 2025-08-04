@@ -5,15 +5,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Section from '@/components/section/section'
-import Button from '@/components/button/button'
+import Quantity from '@/components/quantity/quantity'
 
 import data from '../../../data/home.json'
 
-interface IProductParams {
-  id: string
+interface IProductPage {
+  params: {
+    id: string
+  }
 }
 
-const Product = ({ params }: { params: IProductParams}) => {
+const Product = ({ params }: IProductPage) => {
   const { id: productId } = params
 
   const [quantity, setQuantity] = useState(0)
@@ -31,12 +33,7 @@ const Product = ({ params }: { params: IProductParams}) => {
       <Image src={product.src} alt={product.alt} width={1080} height={480} />
 
       <div>
-        <Button onClick={() => setQuantity(quantity - 1)} style='danger'>-</Button>
-      
-        <input id='quantity' type="number" value={quantity} />
-
-        <Button onClick={() => setQuantity(quantity + 1)}>+</Button>
-
+        <Quantity value={quantity} update={v => setQuantity(v)} />
       </div>
 
       <Link href="/cart">Buy</Link>
