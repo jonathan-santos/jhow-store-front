@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 import Section from '@/components/section/section'
 import Quantity from '@/components/quantity/quantity'
+import Button from '@/components/button/button'
 
 import data from '../../../data/home.json'
 
@@ -36,7 +37,9 @@ const Product = ({ params }: IProductPage) => {
         <Quantity value={quantity} update={v => setQuantity(v)} />
       </div>
 
-      <Link href="/cart">Buy</Link>
+      <Link href="/cart">
+        <Button>Buy</Button>
+      </Link>
     </Section>
   )
 }
