@@ -1,3 +1,5 @@
+import Title from '@/components/title/title'
+
 interface IFaq {
   title: string;
   questions: {
@@ -8,7 +10,7 @@ interface IFaq {
 
 const Faq = ({ title, questions }: IFaq) => (
   <div>
-    <span>{title}</span>
+    <Title level='2'>{title}</Title>
 
     <ul>
       {questions.map(({ title, answer }, i) => (
